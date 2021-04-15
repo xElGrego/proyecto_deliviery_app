@@ -52,9 +52,14 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             SizedBox(height: 10),
-            Text("Delivery App - Grego",
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headline4),
+            Text(
+              "Delivery App - Grego",
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline4.copyWith(
+                color: DeliveryColors.white,
+                fontWeight: FontWeight.bold
+              ),
+            ),
           ],
         ),
       ),
