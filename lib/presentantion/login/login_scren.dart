@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_deliviery_app/presentantion/home/home_scren.dart';
 import 'package:proyecto_deliviery_app/presentantion/theme.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -105,31 +106,36 @@ class LoginScreen extends StatelessWidget {
                         ),
                         hintText: 'password',
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.all(25.0),
-            child: Container(
-              width: width,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                gradient: LinearGradient(
-                  begin: Alignment.centerRight,
-                  end: Alignment.centerLeft,
-                  colors: deliverygrandiant,
+          InkWell(
+            onTap: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage() ) );
+            },
+                      child: Padding(
+              padding: EdgeInsets.all(25.0),
+              child: Container(
+                width: width,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  gradient: LinearGradient(
+                    begin: Alignment.centerRight,
+                    end: Alignment.centerLeft,
+                    colors: deliverygrandiant,
+                  ),
                 ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(14.0),
-                child: Text(
-                  "Login",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(14.0),
+                  child: Text(
+                    "Login",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),

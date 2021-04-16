@@ -31,9 +31,12 @@ final _boderDark = OutlineInputBorder(
 );
 
 //Asigno el color por medio del displayColor y apply
-final ligthTheme = ThemeData(
+ final ligthTheme = ThemeData(
   canvasColor: DeliveryColors.white,
   accentColor: DeliveryColors.purple,
+  appBarTheme: AppBarTheme(
+    color: DeliveryColors.white
+  ),
   textTheme: GoogleFonts.poppinsTextTheme().apply(
     displayColor: DeliveryColors.purple,
     bodyColor: DeliveryColors.purple,
@@ -56,8 +59,11 @@ final ligthTheme = ThemeData(
 
 
 final dartkTheme = ThemeData(
-  canvasColor: DeliveryColors.dark,
+  canvasColor: DeliveryColors.grey,
   accentColor: DeliveryColors.white,
+  appBarTheme: AppBarTheme(
+    color: DeliveryColors.purple
+  ),
   scaffoldBackgroundColor: DeliveryColors.dark,
   
   textTheme: GoogleFonts.poppinsTextTheme().apply(
@@ -81,4 +87,6 @@ final dartkTheme = ThemeData(
     color: DeliveryColors.white,
   ),
 );
+//Asigno el color por medio del displayColor y apply
+
 
