@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_deliviery_app/presentantion/home/cart/cart.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/delivery_bottonNavigationBar.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/products/products_screen.dart';
 
@@ -21,7 +22,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 ProductosScreen(),
                 Text("Current Index 2 "),
-                Text("Current Index 3 "),
+                CardScreen(),
                 Text("Current Index 4 "),
                 Text("Current Index 5 "),
               ],

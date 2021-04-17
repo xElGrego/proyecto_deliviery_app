@@ -17,24 +17,24 @@ final products = [
     name: 'Hamburguer Hamer',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 3',
     price: 12.50.toInt(),
-    image: 'assets/imagenes/hamburguesa3.png'
+    image: 'assets/imagenes/hamburguesa3.jpg'
   ),
   Product(
     name: ' Hamburguer Whooper',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 4',
     price: 12.50.toInt(),
-    image: 'assets/imagenes/hamburguesa1.png'
+    image: 'assets/imagenes/hamburguesa2.png'
   ),
   Product(
     name: 'MegaBacon Hamburguer',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 5',
     price: 12.50.toInt(),
-    image: 'assets/imagenes/hamburguesa2.png'
+    image: 'assets/imagenes/hamburguesa3.jpg'
   ),
   Product(
-    name: 'SuperHiperMegaBacon Hamburguer',
+    name: 'SuperHiper',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 6',
     price: 12.50.toInt(),
-    image: 'assets/imagenes/hamburguesa3.png'
+    image: 'assets/imagenes/hamburguesa1.png'
   ),
 ];

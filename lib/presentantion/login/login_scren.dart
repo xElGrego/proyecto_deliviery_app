@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/home_scren.dart';
 import 'package:proyecto_deliviery_app/presentantion/theme.dart';
+import 'package:proyecto_deliviery_app/presentantion/widgets/botton_delivery.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -112,34 +113,16 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
           ),
-          InkWell(
-            onTap: (){
-              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage() ) );
-            },
-                      child: Padding(
-              padding: EdgeInsets.all(25.0),
-              child: Container(
-                width: width,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  gradient: LinearGradient(
-                    begin: Alignment.centerRight,
-                    end: Alignment.centerLeft,
-                    colors: deliverygrandiant,
-                  ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(14.0),
-                  child: Text(
-                    "Login",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
+          DeliveryButton(
+            title: 'Login',
+            padding: EdgeInsets.symmetric(
+              vertical: 15,
+              horizontal: 150,
             ),
+            ontap: () {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => HomePage()));
+            },
           ),
         ],
       ),
