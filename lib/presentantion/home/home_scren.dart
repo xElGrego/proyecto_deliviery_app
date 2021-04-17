@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/delivery_bottonNavigationBar.dart';
+import 'package:proyecto_deliviery_app/presentantion/home/products/products_screen.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,7 +19,7 @@ class _HomePageState extends State<HomePage> {
             child: IndexedStack(
               index: currentindex,
               children: [
-                Text("Current Index 1 "),
+                ProductosScreen(),
                 Text("Current Index 2 "),
                 Text("Current Index 3 "),
                 Text("Current Index 4 "),

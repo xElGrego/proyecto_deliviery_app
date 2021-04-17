@@ -31,11 +31,19 @@ final _boderDark = OutlineInputBorder(
 );
 
 //Asigno el color por medio del displayColor y apply
- final ligthTheme = ThemeData(
+final ligthTheme = ThemeData(
   canvasColor: DeliveryColors.white,
   accentColor: DeliveryColors.purple,
+  bottomAppBarColor: DeliveryColors.veryLigthGrey,
   appBarTheme: AppBarTheme(
-    color: DeliveryColors.white
+    color: DeliveryColors.white,
+    textTheme: GoogleFonts.poppinsTextTheme().copyWith(
+      headline6: TextStyle(
+        color: DeliveryColors.purple,
+        fontWeight: FontWeight.bold,
+        fontSize: 20,
+      ),
+    ),
   ),
   textTheme: GoogleFonts.poppinsTextTheme().apply(
     displayColor: DeliveryColors.purple,
@@ -44,7 +52,7 @@ final _boderDark = OutlineInputBorder(
   inputDecorationTheme: InputDecorationTheme(
     border: _boderLigth,
     enabledBorder: _boderLigth,
-    labelStyle: TextStyle(color:DeliveryColors.purple),
+    labelStyle: TextStyle(color: DeliveryColors.purple),
     focusedBorder: _boderLigth,
     contentPadding: EdgeInsets.zero,
     hintStyle: GoogleFonts.poppins(
@@ -57,15 +65,21 @@ final _boderDark = OutlineInputBorder(
   ),
 );
 
-
 final dartkTheme = ThemeData(
   canvasColor: DeliveryColors.grey,
   accentColor: DeliveryColors.white,
+  bottomAppBarColor: Colors.transparent,
   appBarTheme: AppBarTheme(
-    color: DeliveryColors.purple
+    color: DeliveryColors.purple,
+    textTheme: GoogleFonts.poppinsTextTheme().copyWith(
+      headline6: TextStyle(
+        color: DeliveryColors.white,
+        fontWeight: FontWeight.bold,
+          fontSize: 20,
+      ),
+    ),
   ),
   scaffoldBackgroundColor: DeliveryColors.dark,
-  
   textTheme: GoogleFonts.poppinsTextTheme().apply(
     displayColor: DeliveryColors.green,
     bodyColor: DeliveryColors.green,
@@ -88,5 +102,3 @@ final dartkTheme = ThemeData(
   ),
 );
 //Asigno el color por medio del displayColor y apply
-
-

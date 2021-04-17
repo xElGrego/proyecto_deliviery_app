@@ -17,6 +17,9 @@ class DeliveryBottonNavigationBar extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Theme.of(context).canvasColor,
+          border: Border.all(
+            color: Theme.of(context).bottomAppBarColor
+          )
         ),
         child: Padding(
           padding: const EdgeInsets.all(5),
@@ -27,12 +30,14 @@ class DeliveryBottonNavigationBar extends StatelessWidget {
                 child: IconButton(
                   icon: Icon(Icons.home),
                   onPressed: () => onIndexSelect(0),
+                  color: index == 0 ? DeliveryColors.green : DeliveryColors.ligthGrey,
                 ),
               ),
               Material(
                 child: IconButton(
                   icon: Icon(Icons.store),
                   onPressed: () => onIndexSelect(1),
+                  color: index == 1 ? DeliveryColors.green : DeliveryColors.ligthGrey,
                 ),
               ),
               Material(
@@ -41,6 +46,7 @@ class DeliveryBottonNavigationBar extends StatelessWidget {
                   child: IconButton(
                     icon: Icon(Icons.shopping_basket),
                     onPressed: () => onIndexSelect(2),
+                    color: index == 2 ? DeliveryColors.green : DeliveryColors.white,
                   ),
                 ),
               ),
@@ -48,6 +54,7 @@ class DeliveryBottonNavigationBar extends StatelessWidget {
                 child: IconButton(
                   icon: Icon(Icons.favorite_border),
                   onPressed: () => onIndexSelect(3),
+                  color: index == 3 ? DeliveryColors.green : DeliveryColors.ligthGrey,
                 ),
               ),
               InkWell(
