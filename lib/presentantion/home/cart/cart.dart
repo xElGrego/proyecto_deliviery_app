@@ -22,7 +22,7 @@ class CardScreen extends StatelessWidget {
             "There are not products",
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 20,
             ),
           ),
           SizedBox(height: 20),
