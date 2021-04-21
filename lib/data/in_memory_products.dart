@@ -10,31 +10,31 @@ final products = [
   Product(
     name: 'xMega Hamburguer',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 2',
-    price: 12.50.toInt(),
+    price: 127.50.toInt(),
     image: 'assets/imagenes/hamburguesa2.png'
   ),
   Product(
     name: 'Hamburguer Hamer',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 3',
-    price: 12.50.toInt(),
-    image: 'assets/imagenes/hamburguesa3.jpg'
+    price: 125.50.toInt(),
+    image: 'assets/imagenes/hamburguesa1.png'
   ),
   Product(
     name: ' Hamburguer Whooper',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 4',
-    price: 12.50.toInt(),
+    price: 121.50.toInt(),
     image: 'assets/imagenes/hamburguesa2.png'
   ),
   Product(
-    name: 'MegaBacon Hamburguer',
+    name: 'MegaBacon',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 5',
-    price: 12.50.toInt(),
-    image: 'assets/imagenes/hamburguesa3.jpg'
+    price: 15.50.toInt(),
+    image: 'assets/imagenes/hamburguesa2.png'
   ),
   Product(
     name: 'SuperHiper',
     description: 'Lorem ni se que mierda pero esto es para la descripción número 6',
-    price: 12.50.toInt(),
+    price: 14.50.toInt(),
     image: 'assets/imagenes/hamburguesa1.png'
   ),
 ];

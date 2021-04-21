@@ -17,10 +17,11 @@ class ProductosScreen extends StatelessWidget {
       body: GridView.builder(
         padding: EdgeInsets.all(20),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 2 / 3,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10),
+          crossAxisCount: 2,
+          childAspectRatio: 2 / 3,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+        ),
         itemCount: products.length,
         itemBuilder: (context, index) {
           final product = products[index];
@@ -52,13 +53,11 @@ class ItemProduct extends StatelessWidget {
               child: CircleAvatar(
                 backgroundColor: DeliveryColors.dark,
                 child: ClipOval(
-                  child: Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Image.asset(
-                        product.image,
-                        fit: BoxFit.cover,
-                      ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Image.asset(
+                      product.image,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),

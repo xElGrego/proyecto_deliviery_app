@@ -22,7 +22,13 @@ class _HomePageState extends State<HomePage> {
               children: [
                 ProductosScreen(),
                 Text("Current Index 2 "),
-                CardScreen(),
+                CardScreen(
+                  onShopping: (){
+                    setState(() {
+                      currentindex = 0;
+                    });
+                  },
+                ),
                 Text("Current Index 4 "),
                 Text("Current Index 5 "),
               ],
@@ -35,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                 currentindex = index;
               });
             },
-          )
+          ),
         ],
       ),
     );
