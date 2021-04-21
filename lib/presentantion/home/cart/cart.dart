@@ -24,12 +24,11 @@ class _FullCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size.height;
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Expanded(
-          flex: 2,
+          flex: 3,
           child: Padding(
             padding: EdgeInsets.all(10),
             child: Container(
@@ -46,7 +45,7 @@ class _FullCard extends StatelessWidget {
           ),
         ),
         Expanded(
-          flex: 1,
+          flex: 2,
           child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Card(
@@ -54,61 +53,84 @@ class _FullCard extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(35.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text("Subtotal",
-                            style: TextStyle(color: Theme.of(context).accentColor)),
-                        Text('15',
-                            style: TextStyle(color: Theme.of(context).accentColor)),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Subtotal",
+                              style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 25,
+                              ),
+                            ),
+                            Text(
+                              '15',
+                             style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Delivery",
+                              style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 22,
+                              ),
+                            ),
+                            Text(
+                              'Free',
+                             style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Total",
+                              style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              '15',
+                             style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 25,
+                                 fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "Subtotal",
-                          style: TextStyle(
-                            color: Theme.of(context).accentColor,
-                          ),
-                        ),
-                        Text(
-                          '15',
-                          style: TextStyle(
-                            color: Theme.of(context).accentColor,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "TOTAL",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Theme.of(context).accentColor,
-                          ),
-                        ),
-                        Text(
-                          "\$15",
-                          style: TextStyle(
-                            color: Theme.of(context).accentColor,
-                          ),
-                        ),
-                      ],
-                    ),
-                    DeliveryButton(
-                      title: 'Checkout',
-                    ),
-                  ],
-                ),
+                  ),
+                  Spacer(),
+                  DeliveryButton(
+                    title: 'Checkout',
+                    ontap: () {
+                      print("Checkout");
+                    },
+                  ),
+                ],
               ),
             ),
           ),

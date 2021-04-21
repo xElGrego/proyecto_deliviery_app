@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: dartkTheme,
-      home: LoginScreen(),
+      home: SplashScreen(),
     );
   }
 }

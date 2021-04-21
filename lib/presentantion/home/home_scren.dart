@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/cart/cart.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/delivery_bottonNavigationBar.dart';
 import 'package:proyecto_deliviery_app/presentantion/home/products/products_screen.dart';
+import 'package:proyecto_deliviery_app/presentantion/home/profile/profile_scren.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -23,14 +24,16 @@ class _HomePageState extends State<HomePage> {
                 ProductosScreen(),
                 Text("Current Index 2 "),
                 CardScreen(
-                  onShopping: (){
-                    setState(() {
-                      currentindex = 0;
-                    });
+                  onShopping: () {
+                    setState(
+                      () {
+                        currentindex = 0;
+                      },
+                    );
                   },
                 ),
                 Text("Current Index 4 "),
-                Text("Current Index 5 "),
+                ProfileScreen()
               ],
             ),
           ),

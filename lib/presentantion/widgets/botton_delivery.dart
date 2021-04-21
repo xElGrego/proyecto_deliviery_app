@@ -11,9 +11,7 @@ class DeliveryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: ontap,
-      child: Padding(
-        padding: EdgeInsets.all(25.0),
-        child: Container(
+      child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             gradient: LinearGradient(
@@ -33,7 +31,6 @@ class DeliveryButton extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }
